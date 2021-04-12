@@ -13,7 +13,11 @@ public class Tablice {
       // {
       // System.out.println("Coś z tablicy = " + tab[i]);
       // }
-      
+      // Program zgłasza wyjątek: Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+// zastanów się dlaczego
+// czym rożni się taki for od klasycznego for(int i; ...; i++) ? 
+// czym jest tab[i] a czym i w tym wypadku? 
+
         for(int i : tab)
         {
             System.out.println("Coś z tablicy = " + tab[i]);
