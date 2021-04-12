@@ -4,6 +4,7 @@ package com.company;
 
 import java.util.function.BiFunction;
 
+//nazwa tej klasy może być myląca bo nie jest to klasa Human a metoda uruchomieniowa używająca klasy Human np. jakiś HumanService byłby bardziej właściwy
 public class Human2 {
 
     public static void main(String[] args) {
