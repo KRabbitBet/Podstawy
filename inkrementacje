@@ -1,0 +1,42 @@
+public class Main
+{
+	byte b = 127; // -128 do 127
+	short s = 32767; // -32768 do 32767
+	int i = -2147483648; // -2147483648 do 2147483647
+	long l = 9223372036854775807l; // -9223372036854775808 do 9223372036854775807
+	float f = 3.444444f; // -3,4*10^38 do 3,4*10^38
+	double d = 3.777654545656345645; // -1,8*10^108 do 1,8*10^108
+	char c = 'a'; // większość alfabetu
+	String string = "Smth here";
+
+	public static void main (String[] args)
+	{
+//		int result = 5;
+//		System.out.println("Result is " + result);
+		byte b1 = 127;
+		b1++;
+		b1++;
+		System.out.println(b1);
+
+
+		int result1, result2, result3, result4;
+		int l1 = 56;
+		int l2 = 16;
+		result1 = l1+l2;
+		result2 = l1-l2;
+		result3 = l1*l2;
+		result4 = l1/l2;
+		int result5 = l1%l2;
+		System.out.println("Result is " + result1);
+		System.out.println("Result is " + result2);
+		System.out.println("Result is " + result3);
+		System.out.println("Result is " + result4);
+		System.out.println("Result is " + result5);
+		result5++;
+		result5++;
+		result5++;
+		System.out.println("Result is " + result5);
+		result1--;
+		System.out.println("Result is " + result1);
+	}
+}
