@@ -4,7 +4,7 @@ package com.company;
 
 import java.util.function.BiFunction;
 
-public class Human2 {
+public class HumanService {
 
     public static void main(String[] args) {
 

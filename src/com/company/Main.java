@@ -1,27 +1,28 @@
 package com.company;
 
-/* Napisz program, który pobierze o użytkownika cztery łańcuchy znaków,
+/* Napisz program, który pobierze od użytkownika cztery łańcuchy znaków,
 które umieścisz w liście. Następnie posortuj tę listę używając metody List.sort.
 Użyj wyrażenia lambda, które posortuje łańcuchy znaków malejąco po długości.
  */
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("wypisz cztery łańcuchy znaków");
+        System.out.println("Write four words of different lengths");
 
-        List<String> lancuchy = new ArrayList<>();
+        List<String> words = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
-            lancuchy.add(scanner.nextLine());
+            words.add(scanner.nextLine());
         }
 
-        System.out.println(lancuchy);
-        lancuchy.sort((a, b) -> b.length() - a.length());
-        System.out.println(lancuchy);
+        System.out.println(words);
+
+        words.sort(Comparator.comparingInt(String::length).reversed());
+        System.out.println(words);
     }
+
+
 }
