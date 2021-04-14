@@ -20,4 +20,5 @@ public class Human {
     String getName() {
         return name;
     }
+
 }
